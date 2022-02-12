@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">close</string>
+    <string name="address">العنوان</string>
+    <string name="currentdate">30/10/2020</string>
+    <string name="current_status">الطقس الان</string>
+    <string name="currentdegree">14 C</string>
+    <string name="_2_am">2 Am</string>
+    <string name="degree">5 C</string>
+    <string name="hello_blank_fragment">hello blanck fragment</string>
+    <string name="gps">"الموقع "</string>
+    <string name="map">الخريطه</string>
+    <string name="language">اللغه</string>
+    <string name="arabic">العربيه</string>
+    <string name="tempreture">درجه الحراره</string>
+    <string name="celsius">celsius</string>
+    <string name="kelvin">kelvin</string>
+    <string name="fahrenheit">fahrenheit</string>
+    <string name="mile_hour">ميلي ساعه</string>
+    <string name="notifications">الاشعارات</string>
+    <string name="enable">تمكين</string>
+    <string name="disable">الغاء</string>
+    <string name="wind_speed">سرعه الرياح</string>
+    <string name="location">الموقع</string>
+    <string name="english">الانجليزيه</string>
+</resources>

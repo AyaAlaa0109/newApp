@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainui.SettingsActivity"
+    android:background="@drawable/background2">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/location"
+    android:textColor="#fff"
+    android:id="@+id/tv_location"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:textSize="@dimen/_20sdp"
+    />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checked="false"
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location"
+        android:text="@string/gps"
+        android:id="@+id/toggel_gps"/>
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+
+        app:layout_constraintStart_toEndOf="@id/toggel_gps"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location"
+        android:text="@string/map"
+        android:checked="false"
+        android:textColor="#fff"
+
+        android:id="@+id/tv_map"
+
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language"
+        android:id="@+id/tv_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_map"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#fff"
+
+        />
+
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_language"
+            app:layout_constraintStart_toStartOf="parent"
+            android:checked="false"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_14sdp"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/arabic"
+            android:id="@+id/togge_arabic"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/togge_arabic"
+            android:text="@string/english"
+            android:checked="false"
+            android:id="@+id/toggel_english"
+            app:layout_constraintTop_toBottomOf="@+id/tv_language"
+            android:textSize="@dimen/_14sdp"
+
+            android:textColor="#fff"
+
+            />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempreture"
+        android:id="@+id/tv_tempreture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggel_english"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#fff"
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tempreture"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checked="false"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/celsius"
+        android:id="@+id/togge_degree_celsius"
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp"
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/togge_degree_celsius"
+        android:text="@string/kelvin"
+        android:checked="false"
+        android:id="@+id/toggel_Kelvin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tempreture"
+
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp"
+
+        />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/toggel_Kelvin"
+        android:text="@string/fahrenheit"
+        android:checked="false"
+        android:id="@+id/toggel_Fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tempreture"
+        android:textSize="@dimen/_14sdp"
+
+        android:textColor="#fff"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wind_speed"
+        android:id="@+id/tv_wind_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggel_Fahrenheit"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#fff"
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checked="false"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Meter/Sec"
+        android:id="@+id/togge_wind_ms"
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp"
+
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/togge_wind_ms"
+        android:text="@string/mile_hour"
+        android:checked="false"
+        android:id="@+id/toggel_milehour"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_speed"
+        android:textSize="@dimen/_14sdp"
+
+        android:textColor="#fff"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications"
+        android:id="@+id/tv_notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggel_milehour"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="#fff"
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        android:checked="false"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/enable"
+        android:id="@+id/togge_notify_enable"
+        android:textColor="#fff"
+
+        android:textSize="@dimen/_14sdp"
+
+        />
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@id/togge_notify_enable"
+        android:text="@string/disable"
+        android:checked="false"
+        android:id="@+id/toggel_notify_disable"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notifications"
+        android:textSize="@dimen/_14sdp"
+
+        android:textColor="#fff"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
